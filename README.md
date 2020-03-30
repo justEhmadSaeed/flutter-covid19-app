@@ -17,4 +17,10 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Objectives
 
-- 
+- ✔ Display Cases Record Globally
+- 🤞 Display Cases Record Countrywise
+- 🤞 Graphical Representation of Cases
+- 🤞 Provide Essential Precautions during a Pandemic
+
+### Screenshot
+<img src="https://user-images.githubusercontent.com/46846821/77954933-d6350700-72e8-11ea-921b-963572f5f74a.png" alt="app-snap" width="200"/>
