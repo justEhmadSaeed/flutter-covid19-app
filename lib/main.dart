@@ -35,8 +35,7 @@ class HomePageState extends State<HomePage> {
     setState(() {
       Map convertToJson = json.decode(response.body);
       convertToJson.forEach((k, v) => data.add(
-          '${k[0].toUpperCase()}${k.substring(1)}:
-           ${k != 'updated' ? v.toString() : timeago.format(DateTime.fromMillisecondsSinceEpoch(v))}'));
+          '${k[0].toUpperCase()}${k.substring(1)}:${k != 'updated' ? v.toString() : timeago.format(DateTime.fromMillisecondsSinceEpoch(v))}'));
       print(data);
     });
     return "Success";
