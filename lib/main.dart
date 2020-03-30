@@ -32,18 +32,13 @@ class HomePageState extends State<HomePage> {
         // accept only json response
         headers: {"Accept": "application/json"});
 
-    print(response.body);
-
     setState(() {
       Map convertToJson = json.decode(response.body);
-      print(convertToJson);
-      convertToJson.forEach((k, v) =>
-          data.add('${k[0].toUpperCase()}${k.substring(1)}: ${k!='updated'? v.toString(): timeago.format(DateTime.fromMillisecondsSinceEpoch(v))}' ));
+      convertToJson.forEach((k, v) => data.add(
+          '${k[0].toUpperCase()}${k.substring(1)}:
+           ${k != 'updated' ? v.toString() : timeago.format(DateTime.fromMillisecondsSinceEpoch(v))}'));
       print(data);
-      // data = convertToJson['GET'];
     });
-    final updateTime = DateTime.fromMillisecondsSinceEpoch(1585433840192);
-    print(timeago.format(updateTime));
     return "Success";
   }
 
