@@ -26,4 +26,4 @@ samples, guidance on mobile development, and a full API reference.
 - 🤞 Members are able to make groups to share the related stuff, information and warnings
 
 ### Screenshot
-<img src="https://user-images.githubusercontent.com/46846821/77954933-d6350700-72e8-11ea-921b-963572f5f74a.png" alt="app-snap" width="200"/>
+<img src="https://user-images.githubusercontent.com/46846821/79332682-b4699000-7f36-11ea-8c31-b58733cc383f.jpg" alt="app-snap" width="200"/>

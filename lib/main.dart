@@ -35,7 +35,7 @@ class HomePageState extends State<HomePage> {
     setState(() {
       Map convertToJson = json.decode(response.body);
       convertToJson.forEach((k, v) => data.add(
-          '${k[0].toUpperCase()}${k.substring(1)}:${k != 'updated' ? v.toString() : timeago.format(DateTime.fromMillisecondsSinceEpoch(v))}'));
+          '${k[0].toUpperCase()}${k.substring(1)} : ${k != 'updated' ? v.toString() : timeago.format(DateTime.fromMillisecondsSinceEpoch(v))}'));
       print(data);
     });
     return "Success";
@@ -46,6 +46,7 @@ class HomePageState extends State<HomePage> {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text("Coco Corona"),
+        backgroundColor: Colors.deepPurple[900],
       ),
       body: new ListView.builder(
         itemCount: data == null ? 0 : data.length,
@@ -58,8 +59,12 @@ class HomePageState extends State<HomePage> {
                 children: <Widget>[
                   new Card(
                     child: Container(
-                        child: new Text(data[index].toString()),
+                        child: new Text(
+                          data[index].toString(),
+                          style: TextStyle(color: Colors.white),
+                        ),
                         padding: const EdgeInsets.all(20.0)),
+                    color: Colors.grey[800],
                   )
                 ],
               ),
@@ -67,6 +72,7 @@ class HomePageState extends State<HomePage> {
           );
         },
       ),
+      backgroundColor: Colors.grey[900],
     );
   }
 }
