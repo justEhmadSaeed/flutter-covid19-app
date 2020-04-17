@@ -16,7 +16,7 @@ class HomePage extends StatefulWidget {
 class HomePageState extends State<HomePage> {
   // APIService apiService = APIService();
   List data = [];
-  final String url = "https://corona.lmao.ninja/all";
+  final String url = "https://corona.lmao.ninja/v2/all";
 
   @override
   void initState() {
