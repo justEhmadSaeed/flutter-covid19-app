@@ -40,40 +40,47 @@ class HomePageState extends State<HomePage> {
         title: new Text("Coco Corona"),
         backgroundColor: Colors.deepPurple[900],
       ),
-      body: FutureBuilder(
-        future: getJsonData(),
-        builder: (context, snapshot) {
-          if (snapshot.hasData) {
-            return ListView.builder(
-              itemCount: finalData == null ? 0 : finalData.length,
-              itemBuilder: (BuildContext context, int index) {
-                return new Container(
-                  child: new Center(
-                    child: new Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: <Widget>[
-                        Card(
-                          child: Container(
-                              child: Text(
-                                finalData[index].toString(),
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              padding: const EdgeInsets.all(20.0)),
-                          color: Colors.grey[800],
-                        )
-                      ],
+      body: Padding(
+        padding: const EdgeInsets.all(4.0),
+        child: FutureBuilder(
+          future: getJsonData(),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              return ListView.builder(
+                itemCount: finalData == null ? 0 : finalData.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return new Container(
+                    child: new Center(
+                      child: new Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: <Widget>[
+                          Card(
+                            child: Container(
+                                child: Text(
+                                  finalData[index],
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20.0
+                                  ),
+                                ),
+                                padding: const EdgeInsets.all(20.0)),
+                            color: Colors.grey[800],
+                          )
+                        ],
+                      ),
                     ),
-                  ),
-                );
-              },
-            );
-          } else { // Loading circular Progress
-            return Align(
-              alignment: FractionalOffset.center,
-              child: CircularProgressIndicator(),
-            );
-          }
-        },
+                  );
+                },
+              );
+            } else {
+              // Loading circular Progress
+              return Align(
+                alignment: FractionalOffset.center,
+                child: CircularProgressIndicator(),
+              );
+            }
+          },
+        ),
       ),
       backgroundColor: Colors.grey[900],
     );
