@@ -18,6 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 ## Objectives
 
 - ✔ Display Cases Record Globally
+- ✔ Enable dark mode with your phone's own dark mode
 - 🤞 Display Cases Record Countrywise
 - 🤞 Graphical Representation of Cases
 - 🤞 Provide Essential Precautions during a Pandemic
@@ -25,5 +26,5 @@ samples, guidance on mobile development, and a full API reference.
 - 🤞 Provide the information of Cleanliness products' retaiers at reliable price
 - 🤞 Members are able to make groups to share the related stuff, information and warnings
 
-### Screenshot
-<img src="https://user-images.githubusercontent.com/46846821/80090338-c8d20c00-8578-11ea-9d24-8e63605ac562.jpg" alt="app-snap" width="300"/>
+### Preview
+![covid19](https://user-images.githubusercontent.com/46846821/80369917-7bbba600-88a8-11ea-9cbe-ec6b7836d0f7.gif)
