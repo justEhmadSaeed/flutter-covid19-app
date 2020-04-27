@@ -5,6 +5,7 @@ import 'dart:convert';
 import 'package:timeago/timeago.dart' as timeago;
 
 void main() => runApp(new MaterialApp(
+      darkTheme: ThemeData.dark(),
       home: new HomePage(),
     ));
 
@@ -36,9 +37,10 @@ class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      // backgroundColor: Colors.grey[900],
       appBar: new AppBar(
         title: new Text("Coco Corona"),
-        backgroundColor: Colors.deepPurple[900],
+        backgroundColor: Colors.deepPurple[700],
       ),
       body: Padding(
         padding: const EdgeInsets.all(4.0),
@@ -59,12 +61,11 @@ class HomePageState extends State<HomePage> {
                                 child: Text(
                                   finalData[index],
                                   style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 20.0
-                                  ),
+                                      // color: Colors.white,
+                                      fontSize: 20.0),
                                 ),
                                 padding: const EdgeInsets.all(20.0)),
-                            color: Colors.grey[800],
+                            // color: Colors.grey[800],
                           )
                         ],
                       ),
@@ -82,7 +83,6 @@ class HomePageState extends State<HomePage> {
           },
         ),
       ),
-      backgroundColor: Colors.grey[900],
     );
   }
 }
