@@ -25,7 +25,9 @@ dependencies:
   cupertino_icons: ^0.1.2
   http: ^0.12.0+4
   timeago: ^2.0.26
-  
+  provider: ^4.1.0
+  shared_preferences: ^0.5.7+1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
