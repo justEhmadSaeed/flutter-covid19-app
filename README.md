@@ -1,8 +1,12 @@
-# Flutter_COVID19-App
+<div align="center">
+	<h1>COCO CORONA<br>
+	<img alt="version: 1.0.0" src="https://img.shields.io/badge/version-v1.0.0-green">
+	<img alt="license: MIT" src="https://img.shields.io/badge/license-MIT-green">
+	</h1>
+</div>
 
-First flutter app about COVID-19 corona virus for global stats
 
-## Plan of Action
+## 🚀Plan of Action
 
 - ✔ Display Cases Record Globally
 - ✔ Dark mode works with your phone's dark mode setting
@@ -13,5 +17,5 @@ First flutter app about COVID-19 corona virus for global stats
 - 🤞 Provide the information of Cleanliness products' retaiers at reliable price
 - 🤞 Members are able to make groups to share the related stuff, information and warnings
 
-### Preview
+## 🎨Preview
 ![covid19](https://user-images.githubusercontent.com/46846821/80369917-7bbba600-88a8-11ea-9cbe-ec6b7836d0f7.gif)
